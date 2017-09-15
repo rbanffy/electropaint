@@ -254,7 +254,7 @@ random_generator_type z_delta_change(0.4, 0.7, 200, false, 0.005, 0.0005);
 
 
 - (void)initGL {
-	srand(time(NULL));
+	srand((int)time(NULL));
 
   [[glview openGLContext] makeCurrentContext];
   GLint params[] = { 1 };
