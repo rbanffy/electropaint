@@ -46,6 +46,7 @@
 #include <algorithm>
 #include <functional>
 
+#define NUM_THINGIES 120
 
 
 struct color_type {
@@ -298,7 +299,7 @@ random_generator_type z_delta_change(0.4, 0.7, 200, false, 0.005, 0.0005);
                       color_type(red_movement(),
                                  green_movement(),
                                  blue_movement()));
-    wings.resize(40, newwing);
+    wings.resize(NUM_THINGIES, newwing);
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
