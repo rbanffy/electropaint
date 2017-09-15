@@ -258,7 +258,7 @@ random_generator_type z_delta_change(0.4, 0.7, 200, false, 0.005, 0.0005);
     
     [[glview openGLContext] makeCurrentContext];
     GLint params[] = { 1 };
-    CGLSetParameter(CGLGetCurrentContext(),  kCGLCPSwapInterval, params);
+    CGLSetParameter(CGLGetCurrentContext(), kCGLCPSwapInterval, params);
     
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
     
